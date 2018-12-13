@@ -11,7 +11,7 @@
     "build:es5": "babel src --out-dir lib/cjs --ignore \"src/__tests__/*.js\"",
     "build:module": "babel --no-babelrc --config-file ./src/.babelrc.es.js src --out-dir lib/esm --ignore \"src/__tests__/*.js\"",
     "build": "npm run build:es5 && npm run build:module",
-    "prepare": " npm run clean && npm run build",
+    "prepare": "npm run build",
     "lint": "xo",
     "test": "jest --coverage",
     "release": "standard-version",
